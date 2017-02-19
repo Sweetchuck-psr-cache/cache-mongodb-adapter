@@ -12,13 +12,13 @@
 namespace Cache\Adapter\MongoDB\Tests;
 
 use Cache\Adapter\MongoDB\MongoDBCachePool;
-use Cache\IntegrationTests\CachePoolTest;
+use Cache\IntegrationTests\SimpleCacheTest;
 
-class IntegrationPoolTest extends CachePoolTest
+class IntegrationSimpleCacheTest extends SimpleCacheTest
 {
     use CreateServerTrait;
 
-    public function createCachePool()
+    public function createSimpleCache()
     {
         return new MongoDBCachePool($this->getCollection());
     }

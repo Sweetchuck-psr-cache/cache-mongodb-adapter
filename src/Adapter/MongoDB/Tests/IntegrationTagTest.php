@@ -12,9 +12,9 @@
 namespace Cache\Adapter\MongoDB\Tests;
 
 use Cache\Adapter\MongoDB\MongoDBCachePool;
-use Cache\IntegrationTests\CachePoolTest;
+use Cache\IntegrationTests\TaggableCachePoolTest;
 
-class IntegrationPoolTest extends CachePoolTest
+class IntegrationTagTest extends TaggableCachePoolTest
 {
     use CreateServerTrait;
 
