@@ -12,7 +12,7 @@ declare(strict_types = 1);
  * with this source code in the file LICENSE.
  */
 
-namespace Cache\Adapter\MongoDB\Tests;
+namespace Cache\Adapter\MongoDB\Tests\Helper;
 
 use Cache\Adapter\MongoDB\MongoDBCachePool;
 use MongoDB\Collection;

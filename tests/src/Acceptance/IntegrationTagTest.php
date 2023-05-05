@@ -12,9 +12,10 @@ declare(strict_types = 1);
  * with this source code in the file LICENSE.
  */
 
-namespace Cache\Adapter\MongoDB\Tests;
+namespace Cache\Adapter\MongoDB\Tests\Acceptance;
 
 use Cache\Adapter\MongoDB\MongoDBCachePool;
+use Cache\Adapter\MongoDB\Tests\Helper\CreateServerTrait;
 use Cache\IntegrationTests\TaggableCachePoolTest;
 
 class IntegrationTagTest extends TaggableCachePoolTest

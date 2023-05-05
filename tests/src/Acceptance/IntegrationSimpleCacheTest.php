@@ -12,17 +12,17 @@ declare(strict_types = 1);
  * with this source code in the file LICENSE.
  */
 
-namespace Cache\Adapter\MongoDB\Tests;
+namespace Cache\Adapter\MongoDB\Tests\Acceptance;
 
 use Cache\Adapter\MongoDB\MongoDBCachePool;
-use Cache\IntegrationTests\CachePoolTest;
-use Psr\Cache\CacheItemPoolInterface;
+use Cache\Adapter\MongoDB\Tests\Helper\CreateServerTrait;
+use Cache\IntegrationTests\SimpleCacheTest;
 
-class IntegrationPoolTest extends CachePoolTest
+class IntegrationSimpleCacheTest extends SimpleCacheTest
 {
     use CreateServerTrait;
 
-    public function createCachePool(): CacheItemPoolInterface
+    public function createSimpleCache(): MongoDBCachePool
     {
         return new MongoDBCachePool($this->getCollection());
     }
