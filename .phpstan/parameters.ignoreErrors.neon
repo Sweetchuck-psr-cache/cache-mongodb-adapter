@@ -1,0 +1,11 @@
+parameters:
+    ignoreErrors:
+        -
+            message: "#^Access to an undefined property object\\:\\:\\$expirationTimestamp\\.$#"
+            count: 1
+            path: ../src/MongoDBCachePool.php
+
+        -
+            message: "#^Access to an undefined property object\\:\\:\\$tags\\.$#"
+            count: 1
+            path: ../src/MongoDBCachePool.php
